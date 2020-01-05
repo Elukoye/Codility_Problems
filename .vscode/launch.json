@@ -1,0 +1,29 @@
+{
+    "configurations": [
+      {
+        "name": "Run RSpec - all",
+        "type": "Ruby",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "program": "/home/elukoye/.rbenv/shims/rspec",
+        "args": [
+          "--pattern",
+          "${workspaceRoot}/spec/_spec.rb"
+        ]
+      },
+      {
+        "name": "Debug RSpec - open spec file",
+        "type": "Ruby",
+        "request": "launch",
+        "cwd": "${workspaceRoot}",
+        "useBundler": true,
+        "pathToBundler": "/home/elukoye/.rbenv/shims/bundle",
+        "pathToRDebugIDE": "/Users/[your name]/.rvm/gems/ruby-2.6.3/bin/rdebug-ide",
+        "debuggerPort": "1235",
+        "program": "/home/elukoye/.rbenv/shims/rdebug-ide",
+        "args": [
+          "${file}"
+        ]
+      },
+    ]
+  }
